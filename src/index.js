@@ -12,7 +12,6 @@ class Game extends Component {
             selected: ""
         };
         this.Greet = this.Greet.bind(this);
-        this.getQ = this.getQ.bind(this);
     }
     getQuestions = () => {
         gameService().then(question => {
@@ -21,32 +20,40 @@ class Game extends Component {
             });
         });
     };
-    getQ() {
+    componentDidMount() {
         this.getQuestions();
-    }
+    };
     Greet() {
         if (this.state.selected === "") {
             return( 
-                <div>{ this.getQ }{this.state.questionBank.map((q) => (
-                    <div className="QuestionBox">
-                        <div className="question">{q}</div>
-                        <button className="answerBtn" onClick={() => {
-                            this.setState({
-                                selected: q
-                            });
-                          }}>Select</button>
-                    </div>
-                ))}</div>
+                <>
+                    <div className="title">Choose a Question</div>
+                    {this.state.questionBank.length > 0 && this.state.questionBank.map(({q, Id}) => {
+                        <div className="QuestionBox">
+                            <QuestionBox question={q}/>
+                            {console.log(q)}
+                            <button className="answerBtn" onClick={() => {
+                                this.setState({
+                                    selected: {q}
+                                });
+                            }}>Select</button>
+                        </div>
+                    })}
+                </>
             );
         }
-        return <div className="questionBank">
-            <div className="question">{this.state.question}</div>
-        </div>
+        return (
+            <div>
+                <div className="title">Answer the Question</div>
+                <div className="questionBox">
+                    <div className="question">{this.state.question}</div>
+                </div>
+            </div>
+        );
     }
     render() {
         return (
             <div className="container">
-                <div className="title">Question</div>
                 < this.Greet />
             </div>
         );
