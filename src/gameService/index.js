@@ -73,7 +73,7 @@ const qBankSFW = [
     Id: "18",
   },
   {
-    q: "What do you first notice when tou meet someone?",
+    q: "What do you first notice when you meet someone?",
     Id: "19",
   },
   {
