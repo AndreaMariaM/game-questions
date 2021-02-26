@@ -7,7 +7,7 @@ import {
 } from 'react-router-dom';
 import Header from "./Header";
 
-function App() {
+function App() { // title the game "Apocalypse". 
     return (
     <div clasName="contianer"><Header />
     <Questions/></div>);

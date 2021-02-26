@@ -1,0 +1,24 @@
+{
+  "name": "db_api",
+  "version": "1.0.0",
+  "description": "NodeJs and Express for Postgres service to the game.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/AndreaMariaM/game-questions.git"
+  },
+  "author": "Andrea Matellian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndreaMariaM/game-questions/issues"
+  },
+  "homepage": "https://github.com/AndreaMariaM/game-questions#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "pg": "^8.5.1"
+  }
+}
