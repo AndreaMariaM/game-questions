@@ -1,10 +1,9 @@
-# Getting Started with Create React App
+## Game Purpose:
+Apocalypse game is meant to be for 4+ players. Everyone should register and login with an email address and make a username that contains their first name. One person clicks generate game code and sends it to the players and everyone enters the code to join together. The batting order is chosen randomly, one player being the “master” in each round. The goal of the game is to guess everyone’s answers right and reach 15 points first. The master chooses a question from 3 and the question is shown to everyone and everyone types in their answer besides for the master. Once all the answers are in, the master sees them without who wrote it and has to match the answer to the person for all the players. If they get 0 right they win 0 points,  ¼ of them right (see the points breakdown for # of players. The fraction of the players gets rounded.), they win 4 points, ½ right and they win 6 points, and all right they win 8 points. The game goes around for who plays the master and is over once someone wins 15 points total.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Database
 
-## Available Scripts
-
-In the project directory, you can run:
+Using postgres specifically with PERN mindset: PostgreSQL, Express, React and Node.js.
 
 ### `npm start`
 
@@ -13,11 +12,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
 
@@ -28,30 +22,6 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
 ### Making a Progressive Web App
 
@@ -65,6 +35,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/a
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
